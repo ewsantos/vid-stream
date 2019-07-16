@@ -3,7 +3,7 @@ var vid;
 $(document).ready(function(){
   if (typeof vid == 'undefined') {
     var qStr = getRequests();
-    vid = new Video("http://localhost:3000/video/" + qStr['vid'], false);
+    vid = new Video("http://10.0.0.137:3000/video/" + qStr['vid'], false);
     if (typeof vid == 'object') {
       $('#vid-player-con').append(vid);
       vid.id = 'video';
